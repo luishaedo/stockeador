@@ -1,0 +1,20 @@
+# Variables de entorno para el servidor
+PORT=5000
+NODE_ENV=development
+JWT_SECRET=as93jD!2f@8FskaL$0dKm3a7XlPwC%jV
+
+# Base de datos PostgreSQL
+DB_HOST=localhost
+DB_PORT=5432
+DB_NAME=product-catalog
+DB_USER=postgres
+DB_PASSWORD=midway
+
+# Cloudinary
+CLOUDINARY_CLOUD_NAME=ds71zcqlk
+CLOUDINARY_API_KEY=574389545834425
+CLOUDINARY_API_SECRET=jnayubF0VUt2WNdKW6aDRpA_4-Q
+
+# Variables de entorno para el cliente
+REACT_APP_API_URL=http://localhost:5000/api
+

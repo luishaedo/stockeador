@@ -1,0 +1,23 @@
+product-catalog/
+├── client/                 # Frontend React
+│   ├── public/
+│   └── src/
+│       ├── components/     # Componentes React
+│       ├── pages/          # Páginas de la aplicación
+│       ├── context/        # Context API para estado global
+│       ├── services/       # Servicios para llamadas a la API
+│       ├── utils/          # Utilidades
+│       └── App.js          # Componente principal
+│
+├── server/                 # Backend Express
+│   ├── config/             # Configuración (DB, etc.)
+│   ├── controllers/        # Controladores
+│   ├── middleware/         # Middleware personalizado
+│   ├── models/             # Modelos Sequelize
+│   ├── routes/             # Rutas de la API
+│   ├── utils/              # Utilidades
+│   └── server.js           # Punto de entrada
+│
+├── .env                    # Variables de entorno
+└── package.json            # Dependencias del proyecto
+
