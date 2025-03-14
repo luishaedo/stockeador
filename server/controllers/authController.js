@@ -13,6 +13,7 @@ const generateToken = (id) => {
 // Registrar usuario
 exports.register = async (req, res) => {
   try {
+    console.log('Datos recibidos:', req.body);
     const { name, email, password } = req.body;
 
     // Verificar si el usuario ya existe
