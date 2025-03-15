@@ -3,10 +3,14 @@ const cors = require('cors');
 const path = require('path');
 const sequelize = require('./config/database');
 const authRoutes = require('./routes/authRoutes');
+const productRoutes = require("./routes/productRoutes");
 require('dotenv').config();
 
 const app = express();
 const PORT = process.env.PORT || 5000;
+
+
+
 
 // Al inicio de server/server.js
 app.use((req, res, next) => {
@@ -34,6 +38,7 @@ app.use(express.urlencoded({ extended: true }));
 
 // Rutas de la API
 app.use('/api/auth', authRoutes);
+app.use("/api/products", productRoutes)
 
 // Ruta de prueba
 app.get('/api/test', (req, res) => {
