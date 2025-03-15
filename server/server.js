@@ -24,11 +24,11 @@ app.use((req, res, next) => {
 ///hasta aqui las pruebas
 
 // Middleware
-app.use(cors({
-  origin: 'http://localhost:3000', // URL del cliente React
-  methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  allowedHeaders: ['Content-Type', 'Authorization']
-}));
+const corsOptions = {
+  origin: ['http://localhost:3000', 'http://localhost:3001'], // Permitir ambos puertos
+  methods: ['GET', 'POST', 'PUT', 'DELETE'], // Métodos permitidos
+};
+app.use(cors(corsOptions));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
