@@ -2,12 +2,15 @@ const { Sequelize } = require("sequelize")
 const path = require('path');
 require('dotenv').config({ path: path.resolve(__dirname, '../../.env') });
 
-// Log database configuration (without sensitive data)
 console.log("Configuración de BD:", {
   host: process.env.DB_HOST,
   database: process.env.DB_NAME,
   username: process.env.DB_USER,
   passwordProvided: !!process.env.DB_PASSWORD,
+  port: process.env.DB_PORT
+  
+
+
 })
 
 // Create Sequelize instance

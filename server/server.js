@@ -25,7 +25,7 @@ app.use((req, res, next) => {
 
 // Middleware
 const corsOptions = {
-  origin: ['http://localhost:3000', 'http://localhost:3001'], // Permitir ambos puertos
+  origin: ['http://localhost:3000', 'http://localhost:3001'],
   methods: ['GET', 'POST', 'PUT', 'DELETE'], // Métodos permitidos
 };
 app.use(cors(corsOptions));
