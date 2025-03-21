@@ -42,7 +42,7 @@ const RegisterForm = () => {
       console.log('Enviando datos:', { name, email, password });
       ////////////////
 // En el componente RegisterForm, antes de la petición axios
-console.log('URL de la API:', process.env.REACT_APP_API_URL || 'http://localhost:5000');
+console.log('URL de la API:', import.meta.env.VITE_API_URL  || 'http://localhost:5000');
       ////////////
       const response = await axios.post('http://localhost:5000/api/auth/register', {
         name,
