@@ -16,7 +16,7 @@
         "dev": "vite",
         "build": "vite build",
         "start": "vite preview",
-        "postinstall": "npm install"
+        
     },
     "eslintConfig": {
         "extends": [
